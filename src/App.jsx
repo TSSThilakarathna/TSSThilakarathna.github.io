@@ -16,7 +16,7 @@ function App() {
           name="description"
           content="Portfolio of Sachin Thilakarathna - Software Engineering student with passion for web development and UI/UX design."
         />
-        <meta name="keywords" content="Sachin Thilakarathna, Software Engineer, UI/UX Designer, Web Developer, React Developer" />
+        <meta name="keywords" content="Sachin Thilakarathna, sachinthilakarathna, galle, sachn, genaral sir john kotelawal defence university, Software Engineer, UI/UX Designer, Web Developer, React Developer" />
         <meta name="author" content="Sachin Thilakarathna" />
         <meta property="og:title" content="Sachin Thilakarathna | Software Engineer & UI/UX Designer" />
         <meta property="og:description" content="Portfolio showcasing projects and skills of Sachin Thilakarathna." />
