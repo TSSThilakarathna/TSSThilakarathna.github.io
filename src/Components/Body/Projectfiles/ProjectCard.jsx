@@ -8,7 +8,7 @@ function ProjectCard({ title, description, imageUrl, siteUrl, iconType, linkedin
   else if (iconType === 'behance') MainIcon = FaBehance;
 
   return (
-    <div className="relative group rounded-lg shadow-lg overflow-hidden transition-all duration-300 max-w-xs bg-[#1a1a2e]">
+    <div className="relative group rounded-lg shadow-lg overflow-hidden transition-all duration-300 max-w-xs ">
       {/* Image */}
       <div className="relative">
         <img
@@ -17,7 +17,7 @@ function ProjectCard({ title, description, imageUrl, siteUrl, iconType, linkedin
           className="w-full h-40 sm:h-48 object-cover"
         />
 
-        {/* Hover overlay - visible only on md+ */}
+        {/* Hover icons - visible only on sm+ */}
         <div className="absolute inset-0 bg-white/10 backdrop-blur-md items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:flex">
           <div className="flex gap-4">
             {MainIcon && siteUrl && (
@@ -25,7 +25,13 @@ function ProjectCard({ title, description, imageUrl, siteUrl, iconType, linkedin
                 href={siteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#FED035] text-2xl hover:text-white transition"
+                className={`text-2xl hover:scale-110 transition ${
+                  iconType === 'github'
+                    ? 'text-black'
+                    : iconType === 'behance'
+                    ? 'text-[#044e98]'
+                    : ''
+                }`}
               >
                 <MainIcon />
               </a>
@@ -35,7 +41,7 @@ function ProjectCard({ title, description, imageUrl, siteUrl, iconType, linkedin
                 href={linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#FED035] text-2xl hover:text-white transition"
+                className="text-[#044e98] text-2xl hover:scale-110 transition"
               >
                 <FaLinkedin />
               </a>
@@ -49,7 +55,7 @@ function ProjectCard({ title, description, imageUrl, siteUrl, iconType, linkedin
         <h2 className="text-[15px] sm:text-[18px] font-semibold text-white mb-2">{title}</h2>
         <p className="text-sm sm:text-base text-gray-300 text-justify">{description}</p>
 
-        {/* Static icons visible only on mobile (sm and below) */}
+        {/* Mobile icons - yellow and shown only on small screens */}
         <div className="flex gap-4 mt-4 sm:hidden">
           {MainIcon && siteUrl && (
             <a
