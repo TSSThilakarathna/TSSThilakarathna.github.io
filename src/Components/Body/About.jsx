@@ -58,17 +58,37 @@ function About() {
             </ul>
           )}
 
-          {activeTab === 'education' && (
-            <div>
-              <ul className="list-disc list-inside space-y-1">
-                <li>General sir John Kotelawala Defense University ( 2022 - Present )</li>
-                <li className="pl-6 list-none text-[12px] md:text-[15px] text-[#928D9B]">Bc (Hons) in Software Engineering Undergraduate.</li><br />
-                <li>Mahinda College Galle ( Jan 2008 - Jan 2022 )</li>
-                <li className="pl-6 list-none text-[12px] md:text-[15px] text-[#928D9B]">For A/L, I appeared in the Mathematics stream and obtained 1A and 2Cs.</li>
-              </ul>
-            
-            </div>
-          )}
+{activeTab === 'education' && (
+  <ul className="list-disc pl-5 space-y-4">
+    {/* University */}
+    <li className="space-y-0">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <p className="font-medium text-base md:text-lg">
+          General Sir John Kotelawala Defence University
+        </p>
+        <span className="text-sm mt-1 md:mt-0">( Feb 2023 - Present )</span>
+      </div>
+      <p className="text-sm md:text-base text-[#928D9B] pl-2">
+        BSc (Hons) in Software Engineering Undergraduate.
+      </p>
+    </li>
+
+    {/* School */}
+    <li className="space-y-0">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+        <p className="font-medium text-base md:text-lg">
+          Mahinda College Galle
+        </p>
+        <span className="text-sm  mt-1 md:mt-0">( Jan 2008 - Jan 2022 )</span>
+      </div>
+      <p className="text-sm md:text-base text-[#928D9B] pl-2">
+        For A/L, I appeared in the Mathematics stream and obtained 1A and 2Cs.
+      </p>
+    </li>
+  </ul>
+)}
+
+
 
           {activeTab === 'certifications' && (
             <ul className="list-disc list-inside space-y-1">

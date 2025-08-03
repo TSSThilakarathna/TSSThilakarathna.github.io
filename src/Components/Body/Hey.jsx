@@ -32,7 +32,7 @@ function Hey() {
               <AiOutlineMail className="text-lg" />
             </a>
             <a
-              href="public/Resume/Sachin Thilakarathna (1).pdf"
+              href="public/Resume/Sachin Thilakarathna Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent border border-[#FED035] text-[#FED035] font-semibold px-6 py-2 rounded-full hover:bg-[#fecf3598] hover:text-[#131929] transition duration-300"
@@ -69,7 +69,7 @@ function Hey() {
               <AiOutlineMail className="text-lg" />
             </a>
             <a
-              href="public/Resume/Sachin Thilakarathna (1).pdf"
+              href="public/Resume/Sachin Thilakarathna Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent border border-[#FED035] text-[#FED035] font-semibold px-6 py-2 rounded-full  hover:bg-[#fecf3598] hover:text-[#131929] transition duration-300 text-center w-[200px]"
