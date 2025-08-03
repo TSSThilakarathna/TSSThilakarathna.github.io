@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sachinthilakarathna.me/sitemap.xml
